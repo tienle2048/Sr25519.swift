@@ -11,7 +11,7 @@ Swift wrapper for sr25519-donna C library. Provides Sr25519 and Ed25519 wrappers
 
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Tesseract Systems, Inc.' => 'info@tesseract.one' }
-  s.source           = { :git => 'https://github.com/tienle2048/.swift.git', :tag => '0.2.0' }
+  s.source           = { :git => 'https://github.com/tienle2048/Sr25519.swift.git', :tag => '0.2.0' }
 
   s.swift_version    = '5.4'
 
