@@ -3,8 +3,8 @@
 import PackageDescription
 
 let package = Package(
-    name: "Sr25519",
-    platforms: [.macOS(.v10_13), .iOS(.v11), .tvOS(.v11), .watchOS(.v6)],
+    name: "Sr25519Clone",
+    platforms: [.macOS(.v10_13), .iOS(.v11)],
     products: [
         .library(
             name: "Sr25519",

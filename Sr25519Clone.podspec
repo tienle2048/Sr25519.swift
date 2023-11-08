@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
-  s.name             = 'Sr25519'
-  s.version          = '999.99.9'
+  s.name             = 'Sr25519Clone'
+  s.version          = '0.2.0'
   s.summary          = 'Swift wrapper for sr25519-donna C library'
   
   s.description      = <<-DESC
@@ -11,12 +11,12 @@ Swift wrapper for sr25519-donna C library. Provides Sr25519 and Ed25519 wrappers
 
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Tesseract Systems, Inc.' => 'info@tesseract.one' }
-  s.source           = { :git => 'https://github.com/tesseract-one/Sr25519.swift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/tienle2048/.swift.git', :tag => '0.2.0' }
 
   s.swift_version    = '5.4'
 
-  base_platforms     = { :ios => '11.0', :osx => '10.13', :tvos => '11.0' }
-  s.platforms        = base_platforms.merge({ :watchos => '6.0' })
+  base_platforms     = { :ios => '11.0', :osx => '10.13'}
+  s.platforms        = base_platforms.merge({  })
   
   s.module_name = 'Sr25519'
   
@@ -45,10 +45,7 @@ Swift wrapper for sr25519-donna C library. Provides Sr25519 and Ed25519 wrappers
     ss.dependency 'Sr25519/Helpers'
     ss.dependency 'Sr25519/CSr25519'
     
-    ss.test_spec 'Ed25519Tests' do |ts|
-      ts.platforms = base_platforms
-      ts.source_files = 'Tests/Ed25519Tests/**/*.swift'
-    end
+   
   end
 
   s.subspec 'Sr25519' do |ss|
@@ -57,10 +54,7 @@ Swift wrapper for sr25519-donna C library. Provides Sr25519 and Ed25519 wrappers
     ss.dependency 'Sr25519/Helpers'
     ss.dependency 'Sr25519/CSr25519'
     
-    ss.test_spec 'Sr25519Tests' do |ts|
-      ts.platforms = base_platforms
-      ts.source_files = 'Tests/Sr25519Tests/**/*.swift'
-    end
+    
   end
 
   s.default_subspecs = 'Sr25519'
